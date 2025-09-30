@@ -11,6 +11,7 @@ public class Main {
         // SpeakText(xxx)
         Scanner scanner = new Scanner(System.in);
         String emptysentence = "Earlier today, during CSA I decided that I finished my program while watcthing a <noun> <verb>, and I thought it made Mr.Baez feel very <adjective>.";
+        //possibly change the sentence, just a place holder for now
         System.out.println("noun: ");
         String noun = scanner.nextLine();
         System.out.println("verb: ");
