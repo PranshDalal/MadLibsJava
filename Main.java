@@ -6,18 +6,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String emptysentence = "Earlier today, during CSA I decided that I finished my program while watcthing a <noun> <verb>, and I thought it made Mr.Baez feel very <adjective>.";
-        //possibly change the sentence, just a place holder for now
-        System.out.println("noun: ");
-        String noun = scanner.nextLine();
-        System.out.println("verb: ");
-        String verb = scanner.nextLine();
-        System.out.println("adjective: ");
-        String adjective = scanner.nextLine();
-        String finalsentence = "Earlier today, during CSA I decided that I finished my program while watcthing a " + noun + " " + verb + ", and I thought it made Mr.Baez feel very " + adjective + ".";
-        System.out.println(finalsentence);
-        SpeakText(finalsentence);
+    Scanner scanner = new Scanner(System.in);
+
+    String template = "Yesterday at the <place>, I <verb> a <adjective> <noun> <adverb>, which made everyone feel <emotion>.";
+
+    System.out.println("place: ");
+    String place = scanner.nextLine();
+    System.out.println("verb: ");
+    String verb = scanner.nextLine();
+    System.out.println("adjective: ");
+    String adjective = scanner.nextLine();
+    System.out.println("noun: ");
+    String noun = scanner.nextLine();
+    System.out.println("adverb: ");
+    String adverb = scanner.nextLine();
+    System.out.println("emotion: ");
+    String emotion = scanner.nextLine();
+    String finalSentence = "Yesterday at the " + place + ", I " + verb + " a " + adjective + " " + noun + " " + adverb + ", which made everyone feel " + emotion + ".";
+
+    System.out.println(finalSentence);
+    SpeakText(finalSentence);
+
     }
 
     public static void SpeakText(String text) {
